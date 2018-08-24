@@ -1,0 +1,51 @@
+.shadow{
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.14), 0px 6px 2px -4px rgba(0, 0, 0, 0.12)
+}
+
+.container{
+    border: 1px solid #ddd;
+    margin: 0px -1px;
+}
+
+.container,.card{
+    padding: 32px;
+}
+.translatorInput{
+    width: 100%;
+}
+
+.toolbar{
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.remark{
+    color:#aaa;
+    font-size:28px;
+    margin: 20px 0;
+}
+.translatorBtn{
+    cursor:pointer;
+    width: 150px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 28px;
+    color: #fff;
+    background-color:#2196f3;
+    margin: 0;
+    
+}
+
+.translatorBtn:active{
+    background-color:#1e88e5;
+}
+
+.card{
+    border: 1px solid #ddd;
+    background:#2196f3;
+    color:#fff;
+    word-break: break-all;
+    min-height:320px;
+}
