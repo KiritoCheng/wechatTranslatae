@@ -6,7 +6,8 @@ import './index.scss';
 import { connect } from '@tarojs/redux';
 import { ThunkDispatch } from 'redux-thunk'
 import { httpTranslatr } from '../../actions/translate';
-import { Select } from '../../components/Select';
+import { Select } from '../../components/Select/Select';
+import { TransformIcon } from '../../components/Icon/TransformIcon';
 
 const mappToState = (state) => {
   return {
@@ -58,12 +59,26 @@ class Index extends Component<any, { value: string }> {
           <Textarea className='translatorInput' placeholder="请输入你想翻译的文字" maxlength={-1}
             value=''
             onInput={this.handleChange} />
+
           <View className='toolbar'>
-            <Select />
+            <View style="flex:3">
+              <View style="display:flex;flex-wrap: nowrap;align-items:center;">
+                <View style="margin-right:32px">
+                  <Select text='中文' />
+                </View>
+                <View style="margin-right:32px">
+                  <TransformIcon size={24}/>
+                </View>
+                <View style="margin-right:32px">
+                  <Select text='就解决' />
+                </View>
+              </View>
+            </View>
             <Button className='translatorBtn shadow' onClick={this.handleClick}>
               翻译
             </Button>
           </View>
+
         </View>
 
         {
