@@ -6,4 +6,6 @@ The Program is a small program, which has the function of translation is embedde
 
 Use : Open the micro letter, sliding down, brings up a menu of small programs, sliding to the right, to find more search 'Kirito's programs' ,then to use it.
 
-Attention : Currently only support chinese-english translation.
+Attention : Currently only support chinese-english translation.  
+  
+小程序搭配react框架实例。
